@@ -1,0 +1,137 @@
+.nav-link {
+	background-color: #ddeff8;
+	color: black;
+}
+
+
+.background {
+	background-image: url("kepek/yoga-vocabs.jpg");
+	background-color: #ddeff8;
+	min-height: 100vh;
+	padding: 2%;
+
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.container {
+	background-color: white;
+	margin: auto;
+	width: 100%;
+	border: 3px solid #555555;
+	padding-top: 2%;
+}
+
+.bg-black {
+	background-color: black;
+	color: white;
+}
+
+.bg-light-gray {
+	background-color: #f7f7f7;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #dee2e6;
+	width: 12.5%;
+}
+
+.bg-sky {
+	background-color: #02c2c7
+}
+
+.bg-orange {
+	background-color: #e95601
+}
+
+.bg-green {
+	background-color: #5bbd2a
+}
+
+.bg-yellow {
+	background-color: #f0d001
+}
+
+.bg-pink {
+	background-color: #ff48a4
+}
+
+.bg-purple {
+	background-color: #9d60ff
+}
+
+.bg-lightred {
+	background-color: #ff5722
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.classes {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: white;
+}
+
+.time {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.teacher {
+	color: #d6d5d5;
+	font-size: 13px;
+}
+
+.table td,
+.table th {
+	padding: .75rem;
+	vertical-align: middle;
+	border-top: 1px solid #dee2e6;
+	text-align: center;
+	height: 50px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.week {
+	width: 100%;
+}
+
+button {
+	background-color: white;
+}
+
+.prev {
+	width: 33%;
+	float: left;
+}
+
+.week_date {
+	width: 33%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.next {
+	float: right;
+	overflow: hidden;
+}

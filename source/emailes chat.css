@@ -1,0 +1,54 @@
+.chat-button {
+  background-color: #0066ff;
+  color: white;
+  border-radius: 10px;
+  width: 140px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+body{
+	background-image: url("hatter.png");
+	background-size: cover;
+}
+
+.chat {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  border: 3px solid #333333;
+}
+
+.chat_form {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.chat_form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.chat_form .send_button {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+}
+
+.chat_form .cancel_button {
+  background-color: #1e252e;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  float: right;
+}

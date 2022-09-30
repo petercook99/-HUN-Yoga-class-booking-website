@@ -1,0 +1,36 @@
+
+body{
+  background-image: url("kepek/abstract.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.loginDiv{
+   width: 40%;
+   margin: auto;
+   color: black;
+   border: 1px solid white;
+   text-align: center;
+   padding-bottom: 10px;
+}
+.loginInput{
+   margin: 10px;
+   border: none;
+   border-bottom: 1px solid black;
+   background: none;
+   padding: 5px;
+   height: 50px;
+   width: 70%;
+   font-size: 24px;
+}
+@keyframes inputFocus {
+   from {box-shadow: none;}
+   to {box-shadow: 1px 1px 15px 2px #888888 inset;}
+}
+.loginInput:focus{
+   outline: none;
+   box-shadow: 1px 1px 15px 2px #888888 inset;
+   animation-name: inputFocus;
+   animation-duration: 0.7s;
+}

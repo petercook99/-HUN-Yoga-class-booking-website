@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="emailes chat.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<!--Menüsor-->
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+		<ul class="nav nav-tabs">
+
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#fooldal">Főoldal</a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Oktatók</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="">Oktató 1</a>
+					<a class="dropdown-item" href="">Oktató 2</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Óratípusok</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="">Típus 1</a>
+					<a class="dropdown-item" href="">Típus 2</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="">Órarend</a>
+			</li>
+	</nav>
+
+	<!--Chat ablak-->
+
+	<button class="chat-button" onclick="openChat()" id="chat-button">Chat</button>
+
+	<div class="chat" id="chat">
+		<form class="chat_form">
+			<h1>Chat</h1>
+
+			<label>E-mail cím:</label><br>
+			<input type="email" id="chat_email"></input><br>
+
+			<label><b>Üzenet:</b></label>
+			<textarea placeholder="Üzenet helye..." id="chat_msg"></textarea>
+			<p id="response"></p>
+
+			<button type="button" class="send_button" onclick="sendMessage()">Küldés</button>
+			<button type="button" class="cancel_button" onclick="closeForm()">Mégse</button>
+		</form>
+	</div>
+
+	<script>
+		function openChat() {
+			document.getElementById("chat").style.display = "block";
+			document.getElementById("chat-button").style.display = "none";
+		}
+
+		function sendMessage() {
+			var response = "";
+			if (document.getElementById("chat_email").value == "") {
+				response = "E-mail címet kötelező megadni!";
+			} else if (document.getElementById("chat_msg").value == "") {
+				response = "Üzenetet írni kötelező!";
+			} else {
+				document.getElementById("chat_email").value = "";
+				document.getElementById("chat_msg").value = "";
+				response = "Az üzenetét sikeresen elküldtük!";
+			}
+			document.getElementById("response").innerHTML = response;
+		}
+
+		function closeForm() {
+			document.getElementById("chat").style.display = "none";
+			document.getElementById("chat-button").style.display = "block";
+			document.getElementById("response").innerHTML = "";
+		}
+	</script>
+
+</body>
+
+</html>

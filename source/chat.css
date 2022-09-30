@@ -1,0 +1,80 @@
+#chatDiv{
+   background-color: #E07D00;
+   color: white;
+   border: 1px solid black;
+   border-radius: 20px;
+   position: fixed;
+   bottom: 15px;
+   right: 20px;
+   width: 100px;
+   height: 60px;
+}
+#chatP{
+   font-size: 30px;
+   margin: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+}
+#chatText, #sendBtn, .msg, .msgDiv, #chatMessagesDiv{
+   visibility: hidden;
+}
+.msgDiv{
+   margin: 1px 10px 1px 10px;
+   background-color: #DDDDDD;
+}
+
+#chatDiv:hover {
+   background-color: white;
+   color: #E07D00;
+   border: 1px solid black;
+   border-radius: 20px;
+   position: fixed;
+   bottom: 15px;
+   right: 20px;
+   width: 20%;
+   height: 70%;
+}
+#chatDiv:hover #chatP{
+   top: 0;
+   left: 0;
+   border-bottom: 1px solid black;
+   margin-bottom: 5%;
+   margin-left: 5px;
+   position: relative;
+ transform: translate(0, 0);
+}
+#chatDiv:hover #chatInput{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   text-align: center;
+}
+#chatDiv:hover #chatText{
+   visibility: visible;
+   width: 70%;
+   margin-bottom: 5px;
+}
+#chatDiv:hover #sendBtn{
+   visibility: visible;
+   width: 20%;
+   margin-bottom: 10px;
+}
+
+#chatDiv:hover .msg{
+   visibility: visible;
+   color: black;
+   overflow-wrap: break-word;
+}
+
+#chatDiv:hover .msgDiv, #chatMessagesDiv{
+   visibility: visible;
+}
+
+#chatDiv:hover #chatMessagesDiv{
+   height: 80%;
+   overflow-y: auto;
+}

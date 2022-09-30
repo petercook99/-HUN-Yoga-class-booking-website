@@ -1,0 +1,238 @@
+.nav-link {
+	background-color:#ddeff8;
+	color:black;
+}
+
+body{
+	background-color: #ddeff8;
+}
+
+.hatter{
+	bottom: 0;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+#focim{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.fokep {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.feliratok{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+
+.gomb{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	border: 2px solid #555555;
+	background-color: transparent;
+	margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.gomb:hover {
+	background-color: #555555;
+	color: white;
+}
+
+.tovabb_gomb{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	border: 2px solid #555555;
+	background-color: transparent;
+	margin: auto;
+}
+
+
+.adatlap{
+	background-color: white;
+	margin: auto;
+	width: 60%;
+	border: 3px solid #555555;
+	padding: 2%;
+}
+
+.szoveg_doboz{
+	position: relative;
+	margin: auto;
+	margin-top: 2%;
+	width: 98%;
+	border: 3px solid #555555;
+	padding: 10px;
+	text-align: justify;
+	background-color: white;
+}
+
+.kiskepek{
+	height: 150px;
+	float: right;
+	padding-left: 2%;
+}
+
+.kiskepek2{
+	height: 150px;
+	float: left;
+	padding-right: 2%;
+}
+
+.szoveg_doboz::after {
+  content: "";
+  clear: both;
+  display: table;
+  background-color: white;
+}
+
+h1{
+	text-align: center;
+}
+
+.adatok{
+	text-align: justify;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.adat1{
+	font-weight: bold;
+	margin-right: 2%;
+}
+
+
+.adat1, .adat2{
+	display: inline;
+}
+
+ h2, img{
+	background-color: white;
+}
+
+.szakasz_2{
+    background-image: url("kepek/abstract.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+	background-color: #ddeff8;
+	padding: 2%;
+}
+
+
+
+.oldal{
+    background-image: url("kepek/yoga-vocabs.jpg");
+	background-color: #ddeff8;
+	min-height: 100vh;
+	padding: 2%;
+
+}
+.cim{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.kozepre{
+	text-align: center;
+}
+
+
+
+table, td, th{
+	margin-bottom: 2%;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid black;
+}
+
+td, th{
+	width: 33%;
+}
+
+.urlap_tabla{
+	margin-bottom: 2%;
+	width: 40%;
+	white-space: nowrap;
+	text-align: left;
+	border: none;
+}
+
+.urlap_cella{
+	text-align: left;
+	border: none;
+}
+
+.szerkadat {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+#vnev, #knev, #email, #tel{
+    height: 30px;
+    outline: 1px solid black;
+}
+
+#tel_sz, #email{
+    width: 120px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#tapasztalat{
+    size: 2;
+    width: 40px;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#bemutatkozas{
+  width: 100%;
+  min-height: 30vh;
+  border: none;
+  font-size: 16px;
+  resize: none !important;
+  text-align: justify;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow: hidden !important;
+}
+
+#leiras{
+  width: 100%;
+  min-height: 100vh;
+  border: none;
+  font-size: 16px;
+  resize: none !important;
+  text-align: justify;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow: hidden !important;
+}
